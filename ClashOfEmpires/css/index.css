@@ -1,0 +1,35 @@
+@import url('base.css');
+
+.hero-banner {
+    height: 100vh;
+}
+
+.hero-banner .hero-content {
+    position: relative; /* Ensure content is above the video */
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-banner h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3.5rem;
+    color: var(--gold-accent);
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+}
+
+.hero-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.1rem;
+    }
+}

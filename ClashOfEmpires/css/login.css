@@ -1,0 +1,51 @@
+@import url('base.css');
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button:hover {
+    color: var(--gold-accent);
+}
+
+.tab-button.active {
+    color: var(--gold-accent);
+    border-bottom: 2px solid var(--gold-accent);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-container .btn {
+    width: 100%;
+    margin-top: 20px;
+}

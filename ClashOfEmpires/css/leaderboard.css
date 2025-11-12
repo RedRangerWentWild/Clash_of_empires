@@ -1,0 +1,89 @@
+@import url('base.css');
+
+.leaderboard-table {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leaderboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.leaderboard-table th {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--gold-accent);
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.leaderboard-table tr:last-child td {
+    border-bottom: none;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: rgba(212, 175, 55, 0.05);
+}
+
+@media (max-width: 768px) {
+    .leaderboard-table table,
+    .leaderboard-table thead,
+    .leaderboard-table tbody,
+    .leaderboard-table th,
+    .leaderboard-table td,
+    .leaderboard-table tr {
+        display: block;
+    }
+
+    .leaderboard-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .leaderboard-table tr {
+        margin-bottom: 15px;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        border-radius: 10px;
+    }
+
+    .leaderboard-table td {
+        border: none;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    .leaderboard-table td:before {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: var(--gold-accent);
+    }
+
+    .leaderboard-table td:nth-of-type(1):before { content: "Rank:"; }
+    .leaderboard-table td:nth-of-type(2):before { content: "Player Name:"; }
+    .leaderboard-table td:nth-of-type(3):before { content: "Empire:"; }
+    .leaderboard-table td:nth-of-type(4):before { content: "Score:"; }
+}

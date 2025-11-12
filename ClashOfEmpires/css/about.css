@@ -1,0 +1,21 @@
+@import url('base.css');
+
+.page-content {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Optional: Add more specific styles for about page sections if needed */
