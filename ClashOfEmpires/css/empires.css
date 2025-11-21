@@ -2,13 +2,13 @@
 
 .parallax-section {
     position: relative;
-    height: 70vh; /* Adjust height as needed */
+    height: 70vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--text-color);
-    background-attachment: fixed; /* This creates the parallax effect */
+    background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.6); 
 }
 
 .parallax-content {
@@ -47,7 +47,7 @@
 
 @media (max-width: 768px) {
     .parallax-section {
-        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+        background-attachment: scroll; 
         height: 50vh;
     }
 
