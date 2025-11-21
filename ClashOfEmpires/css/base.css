@@ -1,5 +1,5 @@
 
-/* base.css */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@400;700&display=swap');
 
@@ -22,7 +22,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    padding-top: 70px; /* To account for fixed navbar height, adjust as needed */
+    padding-top: 70px; /
 }
 
 a {
@@ -42,7 +42,7 @@ a:hover {
     padding: 20px 0;
 }
 
-/* Navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -102,7 +102,7 @@ a:hover {
     transition: 0.4s;
 }
 
-/* Video Background Styles */
+
 .background-video {
     position: absolute;
     top: 50%;
@@ -121,21 +121,20 @@ a:hover {
     overflow: hidden;
     color: var(--text-color);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay over video */
-    min-height: calc(100vh - 70px); /* Adjust for fixed navbar height */
+    background-color: rgba(0, 0, 0, 0.7); 
+    min-height: calc(100vh - 70px); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Page Content */
+
 .page-content {
     padding: 100px 0 50px;
     text-align: center;
     position: relative;
-    z-index: 2; /* Ensure content is above the video and overlay */
-}
+    z-index: 2; 
 
 .page-content h2 {
     font-family: 'Cinzel Decorative', serif;
@@ -151,7 +150,7 @@ a:hover {
     margin: 0 auto 20px;
 }
 
-/* Buttons */
+
 .btn {
     display: inline-block;
     background-color: transparent;
@@ -179,7 +178,7 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* Forms */
+
 .form-group {
     margin-bottom: 20px;
     text-align: left;
@@ -213,7 +212,7 @@ a:hover {
     outline: none;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -246,7 +245,7 @@ footer p {
     transform: translateY(-3px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar .container {
         flex-wrap: wrap;
