@@ -5,7 +5,7 @@
 }
 
 .hero-banner .hero-content {
-    position: relative; /* Ensure content is above the video */
+    position: relative; 
     z-index: 1;
     max-width: 800px;
     padding: 20px;
