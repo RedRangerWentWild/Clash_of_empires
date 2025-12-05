@@ -73,5 +73,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            // Basic DOM manipulation for champions.html
+            const firstChampionName = document.querySelector('.champion-card h3');
+            if (firstChampionName) {
+                firstChampionName.textContent = 'Aella, The Fierce';
+            }
+        });
+    </script>
 </body>
 </html>

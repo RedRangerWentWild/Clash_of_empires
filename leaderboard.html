@@ -100,5 +100,31 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            // Basic DOM manipulation for leaderboard.html - add a new row
+            const leaderboardBody = document.querySelector('.leaderboard-table tbody');
+            if (leaderboardBody) {
+                const newRow = leaderboardBody.insertRow();
+                const rankCell = newRow.insertCell();
+                const nameCell = newRow.insertCell();
+                const empireCell = newRow.insertCell();
+                const scoreCell = newRow.insertCell();
+
+                rankCell.textContent = leaderboardBody.children.length; // Next available rank
+                nameCell.textContent = 'NewChallenger';
+                empireCell.textContent = 'Free Folk';
+                scoreCell.textContent = '13000';
+            }
+        });
+    </script>
 </body>
 </html>

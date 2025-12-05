@@ -62,6 +62,33 @@
                     </div>
                 </div>
             </section>
+
+            <div id="more-news" style="display: none;">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <h3>Community Tournament Announced!</h3>
+                        <p class="news-date">October 20, 2025</p>
+                        <p>Sign up for our first official community tournament and prove your might! Great prizes await the champions.</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                    <div class="news-card">
+                        <h3>Art Contest Winners Revealed!</h3>
+                        <p class="news-date">October 15, 2025</p>
+                        <p>See the stunning creations from our talented community artists and congratulate the winners of this year's contest.</p>
+                        <a href="#" class="btn-small">View Winners</a>
+                    </div>
+                    <div class="news-card">
+                        <h3>Upcoming Server Maintenance</h3>
+                        <p class="news-date">October 12, 2025</p>
+                        <p>Important: We will be performing scheduled server maintenance next week. Expect some downtime during this period.</p>
+                        <a href="#" class="btn-small">Details Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more-news" class="btn">Load More News</button>
+            </div>
         </div>
     </main>
 
@@ -75,5 +102,31 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const moreNewsDiv = document.getElementById('more-news');
+            const loadMoreButton = document.getElementById('load-more-news');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            if (loadMoreButton) {
+                loadMoreButton.addEventListener('click', () => {
+                    if (moreNewsDiv.style.display === 'none') {
+                        moreNewsDiv.style.display = 'block';
+                        loadMoreButton.textContent = 'Show Less News';
+                    } else {
+                        moreNewsDiv.style.display = 'none';
+                        loadMoreButton.textContent = 'Load More News';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

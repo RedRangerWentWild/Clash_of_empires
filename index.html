@@ -66,6 +66,12 @@
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
+
+            // Basic DOM manipulation for index.html
+            const heroHeading = document.querySelector('.hero-content h2');
+            if (heroHeading) {
+                heroHeading.textContent = 'Your Saga Begins Here!';
+            }
         });
     </script>
 </body>

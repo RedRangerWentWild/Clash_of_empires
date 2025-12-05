@@ -114,6 +114,17 @@
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".tab-button").click();
         });
+
+            // Basic DOM manipulation for login.html - log form submission
+            const loginForm = document.querySelector('#login form');
+            if (loginForm) {
+                loginForm.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Prevent actual form submission for this example
+                    console.log('Login form submitted!');
+                    alert('Login functionality to be implemented.');
+                });
+            }
+        
     </script>
 </body>
 </html>

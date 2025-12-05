@@ -38,6 +38,7 @@
             <div class="parallax-content">
                 <h2>The Crimson Dominion</h2>
                 <p>A fierce empire forged in fire and ambition. Their warriors are legendary, their mages feared, and their thirst for conquest unquenchable. United under the banner of the Blood Moon, they seek to dominate all.</p>
+                <button id="change-empire-bg" class="btn">Change Image</button>
             </div>
         </section>
 
@@ -60,5 +61,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            // Basic DOM manipulation for empires.html - change background image
+            const changeBgButton = document.getElementById('change-empire-bg');
+            const firstEmpireSection = document.querySelector('section.parallax-section:first-of-type');
+            let isOriginalBg = true;
+
+            if (changeBgButton && firstEmpireSection) {
+                changeBgButton.addEventListener('click', () => {
+                    if (isOriginalBg) {
+                        firstEmpireSection.style.backgroundImage = 'url("https://via.placeholder.com/1920x1080?text=New+Empire+Image")'; // Placeholder for a new image
+                        isOriginalBg = false;
+                    } else {
+                        firstEmpireSection.style.backgroundImage = 'url('images/empire1.jpg')';
+                        isOriginalBg = true;
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -57,5 +57,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            // Basic DOM manipulation for about.html - change main paragraph content
+            const aboutParagraph = document.querySelector('#about-section p');
+            if (aboutParagraph) {
+                aboutParagraph.textContent = 'Experience a new era of strategy and conquest!';
+            }
+        });
+    </script>
 </body>
 </html>

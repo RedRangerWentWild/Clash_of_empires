@@ -70,5 +70,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                menuToggle.classList.toggle('toggle');
+            });
+
+            // Basic DOM manipulation for gallery.html - change alt text of first image
+            const firstGalleryImage = document.querySelector('.gallery-item img');
+            if (firstGalleryImage) {
+                firstGalleryImage.alt = 'Epic Battle Scene';
+            }
+        });
+    </script>
 </body>
 </html>
